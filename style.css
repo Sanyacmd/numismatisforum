@@ -1,0 +1,60 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.forum-header {
+    background-color: #3949ab;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.forum-container {
+    margin: 20px;
+}
+
+.registration, .new-topic, .topics, .admin-tools {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3949ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+h2 {
+    color: #3949ab;
+}
+
+.topic {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.topic h3 {
+    margin: 0;
+}
+
+.topic small {
+    display: block;
+    font-size: 0.8em;
+    color: #888;
+}

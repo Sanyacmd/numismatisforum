@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="forum-header">
+        <h1>Добро пожаловать на Форум</h1>
+    </header>
+    <main class="forum-container">
+        <!-- Секция регистрации -->
+        <section class="registration">
+            <h2>Регистрация</h2>
+            <form id="registration-form">
+                <input type="text" id="username" placeholder="Имя пользователя" required>
+                <input type="email" id="email" placeholder="Электронная почта" required>
+                <input type="password" id="password" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+        
+        <!-- Секция создания темы -->
+        <section class="new-topic" style="display: none;">
+            <h2>Создать новую тему</h2>
+            <form id="new-topic-form">
+                <input type="text" id="topic-title" placeholder="Заголовок темы" required>
+                <textarea id="topic-content" placeholder="Содержание темы" required></textarea>
+                <button type="submit">Добавить тему</button>
+            </form>
+        </section>
+        
+        <!-- Секция отображения тем -->
+        <section class="topics">
+            <h2>Темы форума</h2>
+            <div id="topics-list">
+                <!-- Темы будут добавляться сюда -->
+            </div>
+        </section>
+        
+        <!-- Секция консоли администратора -->
+        <section class="admin-console" style="display: none;">
+            <h2>Консоль администратора</h2>
+            <form id="admin-console-form">
+                <input type="text" id="admin-command" placeholder="Введите команду (например, /ban email срок причина)" required>
+                <button type="submit">Выполнить</button>
+            </form>
+            <div id="admin-console-output"></div>
+        </section>
+    </main>
+    <footer class="forum-footer">
+        <p>&copy; 2024 Форум. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
